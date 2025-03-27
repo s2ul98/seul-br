@@ -140,6 +140,7 @@
   .main-wrapper2 { 
     background-color: #ffeaf0;
     width: 100%;
+    box-sizing: border-box;
     height: 250px;
     padding: 20px 80px;
     display: flex;
