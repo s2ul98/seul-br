@@ -1,0 +1,461 @@
+.hd_top { /* 로고 */
+    width: 650px;
+    margin: 10px auto -20px auto;
+    text-align: center;
+  }
+  
+   /* 메뉴바 시작 */
+  .menubar-list {
+    list-style: none; 
+    display: flex; 
+    justify-content: center; /* 가운데 정렬 */
+    background-color: rgb(255, 255, 255);
+    align-items: center; 
+    box-shadow: 0 4px 6px rgba(56, 56, 56, 0.1);
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    margin: 10px;
+  }
+  
+  .menu-item { /* 메뉴바 글자 사이 간격 30 */
+    margin: 0 30px;
+  }
+  
+  .menu-item > a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 20px 10px;
+    display: block;
+  }
+  
+  .menu-item > a:hover {
+    color: #f986bd;
+  }
+  
+  .submenu, .subba { /* 서브,완서 메뉴바 속성 */
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(56, 56, 56, 0.1);
+    list-style: none;
+    padding: 10px 0; 
+    
+  }
+  
+  .submenu li a { /* 서브 메뉴바 속성 */
+    padding: 5px 15px; 
+    display: block;
+    text-decoration: none;
+  }
+  
+  .subba li { /* 완전 서브 메뉴바 속성*/
+    white-space: nowrap; 
+    width: auto; 
+    padding: 0;
+  }
+  
+  .su_hover > a {
+    color: #f986bd;
+    font-weight: bold;
+  }
+  
+  .su_hover > a:hover {
+    color: #ff0880;
+  }
+  
+  .menu-item:hover .submenu {
+    display: block;
+  }
+  
+  .submenu li:hover .subba { /* 서브 메뉴바 호버시 완전 서브 메뉴바 보이기 */
+    display: block;
+    left: 100%;
+    top: 0;
+    position: absolute;
+  }
+  /* 메뉴바 끝 */
+
+
+
+  /* header */
+  .page-header {
+    margin-top: 70px;
+}
+
+  .page-header__container {
+    width: var(--size-pc);
+    margin: 0 auto;
+}
+
+  .page-header__content {
+    text-align: center;
+}
+
+  .page-header__title {
+    display: inline-block;
+    position: relative;
+    color: #f986bd;
+    font-family: var(--font-family-scoop);
+    font-weight: 700;
+    font-size: 90px;
+    letter-spacing: -.025em;
+    line-height: 1;
+    margin-top: 0px;
+}
+
+  .page-header__content {
+    text-align: center;
+}
+
+  .page-header__content + .page-header__content .page-header__text {
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+.page-header__text {
+    display: inline-block;
+    padding: 0 25px;
+    color: #f986bd;
+    font-weight: var(--font-weight-sd-bold);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* header 끝 */
+
+
+/* 카테고리 바 시작 */
+ .page-tab {
+    margin: 20px auto 0;
+}
+
+.page-tab__list {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    list-style: none;
+}
+
+.page-tab__item {
+    width: 204px;
+    height: 61px;
+}
+
+.page-tab__item--active .page-tab__link {
+    border-bottom-width: 0;
+    background: #fff;
+}
+
+.page-tab__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: -1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d4d4d4;
+    border-radius: 16px 16px 0 0;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.page-tab__item--active .page-tab__text {
+    color: #000;
+}
+
+.page-tab__item :hover {
+    background-color:#f986bd;
+}
+
+.page-tab__link {
+    text-decoration: none; 
+    color: #333; 
+}
+
+.page-tab__link:hover {
+    color: #ffffff; 
+}
+/* 카테고리 바 끝 */
+
+
+/* 컨텐츠 시작 */
+
+/* 프로모션 */
+.card-list {
+    overflow: hidden;
+    width: var(--size-pc);
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.card-list__list {
+    margin: 0 -25px;
+}
+
+.event-list-list__list {
+    list-style: none;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.card-list__item:nth-child(2n+1) {
+    clear: both;
+}
+
+.card-list__item {
+    float: left;
+    width: calc(50% - 50px);
+    margin: 50px 25px 0;
+    border: 1px solid #d4cdc0;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.card-list__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-list__box {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 297px;
+    margin: -1px 0 -1px -1px;
+    border: 1px solid #d4cdc0;
+    border-radius: 12px;
+}
+
+.event-list-list__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+.event-list-list__count {
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    width: 70px;
+    height: 70px;
+    padding-top: 36px;
+    border-radius: 100%;
+    background: #ff7a95;
+    color: #fff;
+    font-weight: var(--font-weight-sd-bold);
+    font-size: 14px;
+    text-align: center;
+}
+
+.card-list__content {
+    width: calc(100% - 335px);
+    padding-right: 20px;
+}
+
+.event-list-list__title {
+    color: #000;
+    font-weight: var(--font-weight-sd-bold);
+    font-size: 22px;
+}
+
+.event-list-list__item--promotion .event-list-list__category {
+    color: #65c8ff;
+}
+
+.event-list-list__category {
+    display: block;
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
+.event-list-list__date {
+    padding-top: 15px;
+    color: #666;
+    font-weight: var(--font-weight-sd-bold);
+    font-size: 15px;
+}
+
+.event-list-list__date {
+    padding-top: 15px;
+    color: #666;
+    font-weight: var(--font-weight-sd-bold);
+    font-size: 15px;
+}
+/* 프로모션 끝 */
+
+
+/* 제휴혜택 */
+
+.card-list__item {
+    float: left;
+    width: calc(50% - 50px);
+    margin: 50px 25px 0;
+    border: 1px solid #d4cdc0;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.event-list-list__item--benefits .event-list-list__category {
+    color: #ff7aac;
+}
+
+.card-list__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.card-list__box {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 297px;
+    margin: -1px 0 -1px -1px;
+    border: 1px solid #d4cdc0;
+    border-radius: 12px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.event-list-list__count {
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    width: 70px;
+    height: 70px;
+    padding-top: 36px;
+    border-radius: 100%;
+    background: #ff7a95;
+    color: #fff;
+    font-weight: var(--font-weight-sd-bold);
+    font-size: 14px;
+    text-align: center;
+}
+
+.card-list__content {
+    width: calc(100% - 335px);
+    padding-right: 20px;
+}
+
+.card-list__content {
+    width: calc(100% - 335px);
+    padding-right: 20px;
+}
+
+.card-list__content {
+    width: calc(100% - 335px);
+    padding-right: 20px;
+}
+
+.event-list-list__date {
+    padding-top: 15px;
+    color: #666;
+    font-weight: var(--font-weight-sd-bold);
+    font-size: 15px;
+}
+/* 제휴혜택 끝 */
+
+/* 컨텐츠 종료 */
+
+
+
+
+
+
+
+
+/* footer 시작 */
+.footer {
+    margin-top: 80px;
+    background-color: #333;
+  }
+  
+  .inner {
+    width: 300px;
+    margin: 10px auto 10px auto;
+    padding: 20px;
+  }
+  
+  .f_menu.type1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;  
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 1600px;
+    text-align: center;  
+  }
+  
+  .f_menu.type1 li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Pretendard', sans-serif;
+  }
+  
+  .footer-line {
+    border: #ffffff solid 1px; 
+    width: 190px;  
+    /* max-width: 1600px;  */
+    margin: 30px auto 30px auto; 
+  }
+  
+  .footer-info {
+    max-width: 1600px;
+    margin: 20px auto 20px auto;
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    font-family: 'Pretendard', sans-serif;
+  }
+  
+  .footer-info address {
+    font-style: normal;
+  }
+  
+  .info-row {
+    margin: 7px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .info-row .bar::after {
+    content: "|";
+    margin: 0 6px;
+    color: #ccc;
+  }
+  
+  .info-row .bar:last-child::after {
+    content: "";
+    margin: 0;
+  }
+  
+  .txt_underline {
+    text-decoration: underline;
+    color: #888;
+  }
+  
+  .roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .footer-info .copyright {
+    margin-top: 10px;
+    font-size: 10px;
+    color: #aaa;
+  }

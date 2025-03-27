@@ -1,0 +1,114 @@
+   <!-- 메인 2 시작 -->
+   <div class="main-wrapper main-wrapper2">
+    <!-- 메인 2_title -->
+    <div class="main-header main-header2">
+      <h2 class="header-title2">New Item</h2>
+      <p class="hearder-text hearder-text2">새로 나온 배라의 신제품을 소개합니다</p>
+    </div>
+    <button>
+      <div class="new-btn">
+          <a href="#" class="btn-text">자세히 보기</a>
+      </div>
+      </button>
+
+     <!-- 메인 2 제품 나열 -->
+     <div class="new-item-container">
+      <div class="new-item-card">
+        <div class="menu-fom-new__frame">
+          <img src="./img/main2con/메인 2-1.png" class="menu-fom-new__image" alt="메인 2-1">
+        </div>
+      </div>
+
+      <div class="new-item-card">
+        <div class="menu-fom-new__frame">
+          <img src="./img/main2con/메인 2-1.png" class="menu-fom-new__image" alt="메인 2-2">
+        </div>
+      </div>
+      
+      <div class="new-item-card">
+        <div class="menu-fom-new__frame">
+          <img src="./img/main2con/메인 2-1.png" class="menu-fom-new__image" alt="메인 2-3">
+        </div>
+      </div>
+    </div>
+    
+    </div>
+
+
+
+    .main-wrapper2 {
+        background-color: #ffeaf0;
+        text-align: left;
+        padding: 50px 0 30px 0;
+        width: 100%;
+        height: auto;
+        margin-top: 80px;
+      }
+      
+      .header-title2 {
+        font-size: 60px;
+        font-weight: bold;
+        color: #ff5484;
+        font-family: 'Gowun Batang'; /*폰트 갑자기 왜풀림? 체크 */
+        margin-bottom: 5px;
+      }
+      
+      .hearder-text2 {
+        font-size: 18px;
+        color: #333;
+        font-family: 'Pretendard light';
+      }
+      
+      .main-header2 {
+        text-align: left;
+        margin-left: 80px; 
+      }
+      
+      .new-btn {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 15px 30px;
+        background-color: #ffd7e2;
+        border-radius: 10px;
+        text-decoration: none;
+        display: inline-block;
+      }
+    
+      .btn-text {
+        color: #ff2a6d;
+        text-decoration: none;
+      }
+    
+      .new-btn a:hover {
+        color: #ff2a6d;
+      }
+      
+      .main-wrapper2 button { /* 자세히 보기 박스 위치 조정 */
+        margin-left: 80px; 
+        margin-top: 10px;
+        border: none;
+        background: none;
+        padding: 0;
+      }
+    
+      .new-item-container {
+        display: flex;
+        gap: 20px;
+        flex: 0 0 auto;
+      }
+      
+      .new-item-card {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .menu-fom-new__image {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+      }

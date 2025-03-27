@@ -1,0 +1,389 @@
+.hd_top { /* 로고 */
+    width: 650px;
+    margin: 10px auto -20px auto;
+    text-align: center;
+  }
+  
+   /* 메뉴바 시작 */
+  .menubar-list {
+    list-style: none; 
+    display: flex; 
+    justify-content: center; /* 가운데 정렬 */
+    background-color: rgb(255, 255, 255);
+    align-items: center; 
+    box-shadow: 0 4px 6px rgba(56, 56, 56, 0.1);
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    margin: 10px;
+  }
+  
+  .menu-item { /* 메뉴바 글자 사이 간격 30 */
+    margin: 0 30px;
+  }
+  
+  .menu-item > a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 20px 10px;
+    display: block;
+  }
+  
+  .menu-item > a:hover {
+    color: #f986bd;
+  }
+  
+  .submenu, .subba { /* 서브,완서 메뉴바 속성 */
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(56, 56, 56, 0.1);
+    list-style: none;
+    padding: 10px 0; 
+    
+  }
+  
+  .submenu li a { /* 서브 메뉴바 속성 */
+    padding: 5px 15px; 
+    display: block;
+    text-decoration: none;
+  }
+  
+  .subba li { /* 완전 서브 메뉴바 속성*/
+    white-space: nowrap; 
+    width: auto; 
+    padding: 0;
+  }
+  
+  .su_hover > a {
+    color: #f986bd;
+    font-weight: bold;
+  }
+  
+  .su_hover > a:hover {
+    color: #ff0880;
+  }
+  
+  .menu-item:hover .submenu {
+    display: block;
+  }
+  
+  .submenu li:hover .subba { /* 서브 메뉴바 호버시 완전 서브 메뉴바 보이기 */
+    display: block;
+    left: 100%;
+    top: 0;
+    position: absolute;
+  }
+  /* 메뉴바 끝 */
+  
+  /* 메인 배너 시작 */
+  .main_banner {
+  background-color: #ffffff;
+  }
+  .main_img { /* 메인 배너 이미지 속성 */
+    width: auto;
+    height: 750px;
+    margin: 0 auto;
+    display: block;
+  }
+  /* 메인 배너 끝 */
+  
+  /* main title 시작 */
+  .main-wrapper { 
+    padding: 50px 0 30px 0;
+    text-align: center;
+  }
+  
+  .header-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #ff5484;
+    font-family: 'Gowun Batang'; /*폰트 갑자기 왜풀림? 체크 */
+    margin-bottom: 5px;
+  }
+  
+  .hearder-text {
+    font-size: 18px;
+    color: #333;
+    font-family: 'Pretendard light';
+  }
+  
+  .main-content-wrapper {
+    display: flex;
+    margin-top: 30px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .main-promotion_frame {
+    overflow: hidden;
+    border-radius: 0% 30% 0 0;
+    margin: 0 30px;
+  }
+  
+  .line {
+    border-top: 1px solid #b6b6b6;  /* 선 색상 지정 */
+  }
+  
+  .promotion-date {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* 메인 1 끝 */
+  
+  /* 메인 2 시작 */
+  .main-wrapper2 { 
+    background-color: #ffeaf0;
+    width: 100%;
+    height: 250px;
+    padding: 20px 80px;
+    display: flex;
+    margin-top: 80px; /* 메인 1 사이 여백*/
+  }
+  
+  .main2-inner { /* 좌우 컨테이너 */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    max-width: 1750px;
+  }
+  
+  .main2-text { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+  }
+  
+  .header-title2 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #ff5484;
+    font-family: 'Gowun Batang';
+    margin: 0;
+  }
+  
+  .hearder-text2 {
+    font-size: 18px;
+    color: #333;
+    font-family: 'Pretendard light';
+    margin: 0;
+  }
+  
+  .new-btn {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #ffd7e2;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ff2a6d;
+    margin-top: 10px;
+    width: 150px;
+    text-align: center;
+  }
+
+  .new-btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: #ff0880;
+  }
+  
+  .main2-images {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .image-box { /* 이미지 감싸는 box 속성 */
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+  }
+
+  .main2-img { /* 이미지 속성 */
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    padding: 10px;
+  }
+
+  /* .overlay {
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .image-box > :hover {
+    color: #333;
+    opacity: 0.5;
+  } */
+  
+  .box-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    transform: translateX(-43%) translateY(-30%);
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    opacity: 1;
+  }
+
+  /* .box-text:hover {
+    
+  } */
+ /* 메인 2 끝 */
+
+ /* 메인 3 시작 */
+ .header-title3 {
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(32, 87, 162);
+  font-family: 'Gowun Batang';
+  margin-bottom: 5px;
+}
+
+.main3 {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 40px;               
+  padding: 30px auto;
+}
+
+.mid_itm img {
+  width: 250px; 
+  height: auto;
+}
+
+/* 메인 3 끝 */
+
+/* 메인 4 시작 */
+
+.main-con4 {
+  margin-top: 100px;
+  /* margin-bottom: 80px; */
+}
+
+.main4-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(229, 229, 229);
+    width: 800px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 0 20px;
+  }
+ 
+.sec_title {
+    font-size: 18px;
+    color: #333;
+}
+
+.main4-text {
+  font-size: 18px;
+  color: #333;
+  margin-left: 10px;
+}
+
+.main4-btn_txt {
+  margin-left: 10px;
+}
+/* 메인 4 끝 */
+
+/* footer 시작 */
+.footer {
+  margin-top: 80px;
+  background-color: #333;
+}
+
+.inner {
+  width: 300px;
+  margin: 10px auto 10px auto;
+  padding: 20px;
+}
+
+.f_menu.type1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;  
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 1600px;
+  text-align: center;  
+}
+
+.f_menu.type1 li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.footer-line {
+  border: #ffffff solid 1px; 
+  width: 190px;  
+  /* max-width: 1600px;  */
+  margin: 30px auto 30px auto; 
+}
+
+.footer-info {
+  max-width: 1600px;
+  margin: 20px auto 20px auto;
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.footer-info address {
+  font-style: normal;
+}
+
+.info-row {
+  margin: 7px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.info-row .bar::after {
+  content: "|";
+  margin: 0 6px;
+  color: #ccc;
+}
+
+.info-row .bar:last-child::after {
+  content: "";
+  margin: 0;
+}
+
+.txt_underline {
+  text-decoration: underline;
+  color: #888;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-info .copyright {
+  margin-top: 10px;
+  font-size: 10px;
+  color: #aaa;
+}
+
+
+
+
